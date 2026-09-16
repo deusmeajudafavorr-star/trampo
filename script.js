@@ -1,12 +1,12 @@
 const professionals=[
- {name:'Ampla Engenharia',type:'Engenharia civil e construcao',city:'Juazeiro do Norte',phone:'(88) 3512-6546',address:'Rua Joao Freire de Araujo, 70 - Lagoa Seca',image:'https://amplaengenharia.eng.br/wp-content/uploads/2019/03/KM_97762.png'}
+ {name:'Ampla Engenharia',type:'Engenharia civil e construcao',city:'Juazeiro do Norte',phone:'(88) 3512-6546',address:'Rua Joao Freire de Araujo, 70 - Lagoa Seca',image:'https://amplaengenharia.eng.br/wp-content/uploads/2019/03/KM_97762.png',fallback:'https://amplaengenharia.eng.br/wp-content/uploads/2019/02/logo_ampla.png'}
 ];
 const cards=document.getElementById('cards');
 const emptyState=document.getElementById('emptyState');
 const resultCount=document.getElementById('resultCount');
 const normalize=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 function render(list){
- cards.innerHTML=list.map(p=>`<article class="card"><div class="card-top"><img class="profile-photo" src="${p.image}" alt="Foto da ${p.name}" loading="lazy"><span class="rating">Foto empresarial</span></div><h3>${p.name}</h3><p class="type">${p.type}</p><p class="city">${p.city}</p><p class="city">${p.address}</p><p class="city">${p.phone}</p><a class="card-link" href="tel:${p.phone.replace(/\D/g,'')}">Ligar</a></article>`).join('');
+ cards.innerHTML=list.map(p=>`<article class="card"><div class="card-top"><img class="profile-photo" src="${p.image}" alt="Imagem da ${p.name}" loading="lazy" onerror="this.onerror=null;this.src='${p.fallback}'"><span class="rating">Imagem da empresa</span></div><h3>${p.name}</h3><p class="type">${p.type}</p><p class="city">${p.city}</p><p class="city">${p.address}</p><p class="city">${p.phone}</p><a class="card-link" href="tel:${p.phone.replace(/\D/g,'')}">Ligar</a></article>`).join('');
  resultCount.textContent=`${list.length} resultado${list.length===1?'':'s'}`;
  emptyState.hidden=list.length!==0;
 }
