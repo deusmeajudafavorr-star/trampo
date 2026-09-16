@@ -1,14 +1,14 @@
 const professionals=[
- {name:'Edson Cardoso Bandeira',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(88) 9945-2897',address:'Rua Vaqueiro Raimundo Jacó, 147 - Leandro Bezerra de Meneses'},
- {name:'Hp Vidros',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(88) 8856-7313',address:'Rua São Benedito, 583 - São Miguel'},
- {name:'Vidracaria Galvao',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(88) 8847-0506',address:'Rua Doutora Maria Nilda de Santana, 132 - Lagoa Seca'},
- {name:'Aurelino Contrucao Sivil',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(73) 8836-7206',address:'Avenida Padre Cícero, 2555 - Triângulo'},
- {name:'Jose Osmar Marcos Pereira',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(88) 9732-6901',address:'Avenida Madre Maria Nely Sobreira, 50 - Limoeiro'},
- {name:'Eb Construcoes',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(88) 9660-8206',address:'Travessa Santa Inês, 196 - Pio XII'},
- {name:'Ampla Engenharia',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(88) 3512-6546',address:'Rua João Freire de Araújo, 70 - Lagoa Seca'},
- {name:'Ap Construcoes',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(88) 9676-6793',address:'Rua Unias Figueiras, 120 - Limoeiro'},
- {name:'Jair',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(88) 9638-3626',address:'Rua Letícia Vasconcelos, 313 - Triângulo'},
- {name:'Antonio Soares da Silva',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(88) 9976-5684',address:'Rua José Lopes de Oliveira, 225 - João Cabral'}
+ {name:'Pedreiro Cariri',type:'Pedreiro e reforma',city:'Juazeiro do Norte',phone:'(85) 9851-1515',address:'Rua Padre Pedro Ribeiro, 28 - Salesianos'},
+ {name:'Casas Kariri',type:'Construcao civil',city:'Juazeiro do Norte',phone:'(88) 8143-2791',address:'Avenida Eduardo McLain, 390 - Triangulo'},
+ {name:'Cvl',type:'Construcao civil',city:'Juazeiro do Norte',phone:'(88) 9743-6878',address:'Rua Padre Cicero, 821 - Centro'},
+ {name:'C.A.S. Construcoes',type:'Construcao civil',city:'Juazeiro do Norte',phone:'(88) 9417-4204',address:'Rua Padre Joao Moretti, 109 - Jardim Gonzaga'},
+ {name:'Jardins da Praca Empreendimento Imobiliario',type:'Construcao e empreendimentos',city:'Juazeiro do Norte',phone:'(85) 3458-1246',address:'Rua Genario de Oliveira, 900 - Lagoa Seca'},
+ {name:'Construtora Ribeiro Gomes',type:'Construcao civil',city:'Juazeiro do Norte',phone:'(88) 9693-2898',address:'Rua Vereador Jose Goncalves de Almeida, 1162 - Tiradentes'},
+ {name:'Jcm Empreendimentos Imobiliarios',type:'Construcao e empreendimentos',city:'Juazeiro do Norte',phone:'(88) 3572-3777',address:'Rua Abel Sobreira, 407 - Piraja'},
+ {name:'Solucao Empreendimentos Imobiliarios',type:'Construcao e empreendimentos',city:'Juazeiro do Norte',phone:'(88) 8827-4650',address:'Avenida Quinco Melo, 7 - Aeroporto'},
+ {name:'Meg Construcoes',type:'Construcao civil',city:'Juazeiro do Norte',phone:'(88) 8834-3216',address:'Rua Carolina Sobreira, 466 - Piraja'},
+ {name:'Gc Construcoes',type:'Construcao civil',city:'Juazeiro do Norte',phone:'(88) 2131-3568',address:'Rua Maria Senhor ia da Silva, 35 - Professora Maria Geli Sa Barreto'}
 ];
 const cards=document.getElementById('cards');
 const emptyState=document.getElementById('emptyState');
