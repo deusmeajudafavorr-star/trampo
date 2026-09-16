@@ -1,20 +1,21 @@
 const professionals=[
- {name:'Carlos Ferreira',type:'Eletricista',city:'Juazeiro do Norte',rating:'5,0'},
- {name:'Marcos Lima',type:'Encanador',city:'Juazeiro do Norte',rating:'4,9'},
- {name:'Ana Souza',type:'Diarista',city:'Crato',rating:'5,0'},
- {name:'Rafael Alves',type:'Pintor',city:'Barbalha',rating:'4,8'},
- {name:'Joao Martins',type:'Montador de moveis',city:'Juazeiro do Norte',rating:'4,9'},
- {name:'Lucas Santos',type:'Jardineiro',city:'Crato',rating:'4,8'},
- {name:'Fernanda Costa',type:'Manicure',city:'Barbalha',rating:'5,0'},
- {name:'Pedro Rocha',type:'Marceneiro',city:'Juazeiro do Norte',rating:'4,9'},
- {name:'Bruno Melo',type:'Tecnico de ar condicionado',city:'Crato',rating:'4,8'}
+ {name:'Edson Cardoso Bandeira',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(88) 9945-2897',address:'Rua Vaqueiro Raimundo Jacó, 147 - Leandro Bezerra de Meneses'},
+ {name:'Hp Vidros',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(88) 8856-7313',address:'Rua São Benedito, 583 - São Miguel'},
+ {name:'Vidracaria Galvao',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(88) 8847-0506',address:'Rua Doutora Maria Nilda de Santana, 132 - Lagoa Seca'},
+ {name:'Aurelino Contrucao Sivil',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(73) 8836-7206',address:'Avenida Padre Cícero, 2555 - Triângulo'},
+ {name:'Jose Osmar Marcos Pereira',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(88) 9732-6901',address:'Avenida Madre Maria Nely Sobreira, 50 - Limoeiro'},
+ {name:'Eb Construcoes',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(88) 9660-8206',address:'Travessa Santa Inês, 196 - Pio XII'},
+ {name:'Ampla Engenharia',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(88) 3512-6546',address:'Rua João Freire de Araújo, 70 - Lagoa Seca'},
+ {name:'Ap Construcoes',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(88) 9676-6793',address:'Rua Unias Figueiras, 120 - Limoeiro'},
+ {name:'Jair',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(88) 9638-3626',address:'Rua Letícia Vasconcelos, 313 - Triângulo'},
+ {name:'Antonio Soares da Silva',type:'Pedreiro',city:'Juazeiro do Norte',phone:'(88) 9976-5684',address:'Rua José Lopes de Oliveira, 225 - João Cabral'}
 ];
 const cards=document.getElementById('cards');
 const emptyState=document.getElementById('emptyState');
 const resultCount=document.getElementById('resultCount');
 const normalize=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 function render(list){
- cards.innerHTML=list.map(p=>`<article class="card"><div class="card-top"><div class="avatar">${p.name.split(' ').map(x=>x[0]).slice(0,2).join('')}</div><span class="rating">★ ${p.rating}</span></div><h3>${p.name}</h3><p class="type">${p.type}</p><p class="city">${p.city}</p><a class="card-link" href="#cadastro">Ver profissional</a></article>`).join('');
+ cards.innerHTML=list.map(p=>`<article class="card"><div class="card-top"><div class="avatar">${p.name.split(' ').map(x=>x[0]).slice(0,2).join('')}</div><span class="rating">Contato publico</span></div><h3>${p.name}</h3><p class="type">${p.type}</p><p class="city">${p.city}</p><p class="city">${p.address}</p><p class="city">${p.phone}</p><a class="card-link" href="tel:${p.phone.replace(/\D/g,'')}">Ligar</a></article>`).join('');
  resultCount.textContent=`${list.length} resultado${list.length===1?'':'s'}`;
  emptyState.hidden=list.length!==0;
 }
