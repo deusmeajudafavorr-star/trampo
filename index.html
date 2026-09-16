@@ -27,14 +27,8 @@
         <h1>Encontre quem resolve.</h1>
         <p>Profissionais para os serviços do dia a dia, de forma simples e rápida.</p>
         <form class="search-box" id="searchForm">
-          <label>
-            <span>O que você precisa?</span>
-            <input id="serviceInput" type="search" placeholder="Ex: eletricista, diarista, pintor...">
-          </label>
-          <label>
-            <span>Cidade</span>
-            <input id="cityInput" type="search" placeholder="Ex: Juazeiro do Norte">
-          </label>
+          <label><span>O que você precisa?</span><input id="serviceInput" type="search" placeholder="Ex: eletricista, diarista, pintor..."></label>
+          <label><span>Cidade</span><input id="cityInput" type="search" placeholder="Ex: Juazeiro do Norte"></label>
           <button class="button" type="submit">Buscar</button>
         </form>
       </div>
@@ -42,58 +36,26 @@
 
     <section class="section" id="categorias">
       <div class="container">
-        <div class="section-heading">
-          <div><span class="eyebrow">ENCONTRE POR CATEGORIA</span><h2>O que você precisa?</h2></div>
-        </div>
+        <div class="section-heading"><div><span class="eyebrow">ENCONTRE POR CATEGORIA</span><h2>O que você precisa?</h2></div></div>
         <div class="categories" id="categories">
-          <button data-category="Eletricista">Eletricista</button>
-          <button data-category="Encanador">Encanador</button>
-          <button data-category="Diarista">Diarista</button>
-          <button data-category="Pintor">Pintor</button>
-          <button data-category="Pedreiro">Pedreiro</button>
-          <button data-category="Montador de moveis">Montador de moveis</button>
-          <button data-category="Jardineiro">Jardineiro</button>
-          <button data-category="Tecnico de ar condicionado">Ar-condicionado</button>
-          <button data-category="Manicure">Manicure</button>
-          <button data-category="Fotografo">Fotografo</button>
-          <button data-category="Professor particular">Professor particular</button>
-          <button data-category="Marceneiro">Marceneiro</button>
+          <button data-category="Eletricista">Eletricista</button><button data-category="Encanador">Encanador</button><button data-category="Diarista">Diarista</button><button data-category="Pintor">Pintor</button><button data-category="Pedreiro">Pedreiro</button><button data-category="Montador de moveis">Montador de moveis</button><button data-category="Jardineiro">Jardineiro</button><button data-category="Tecnico de ar condicionado">Ar-condicionado</button><button data-category="Manicure">Manicure</button><button data-category="Fotografo">Fotografo</button><button data-category="Professor particular">Professor particular</button><button data-category="Marceneiro">Marceneiro</button>
         </div>
       </div>
     </section>
 
     <section class="section results-section" id="profissionais">
       <div class="container">
-        <div class="section-heading">
-          <div><span class="eyebrow">PROFISSIONAIS</span><h2>Alguns serviços</h2></div>
-          <span class="result-count" id="resultCount"></span>
-        </div>
+        <div class="section-heading"><div><span class="eyebrow">PROFISSIONAIS</span><h2>Alguns serviços</h2></div><span class="result-count" id="resultCount"></span></div>
         <div class="cards" id="cards"></div>
         <div class="empty" id="emptyState" hidden>Nenhum profissional encontrado. Tente outra busca.</div>
       </div>
     </section>
 
-    <section class="how section" id="como-funciona">
-      <div class="container">
-        <span class="eyebrow">COMO FUNCIONA</span>
-        <h2>Resolver ficou mais simples.</h2>
-        <div class="steps">
-          <div><strong>01</strong><h3>Busque</h3><p>Digite o serviço que você precisa e sua cidade.</p></div>
-          <div><strong>02</strong><h3>Encontre</h3><p>Veja profissionais e escolha o serviço que combina com você.</p></div>
-          <div><strong>03</strong><h3>Combine</h3><p>Entre em contato e combine diretamente os detalhes.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta" id="cadastro">
-      <div class="container cta-inner">
-        <div><span class="eyebrow">VOCÊ PRESTA SERVIÇOS?</span><h2>Coloque seu trabalho no TRAMPO.</h2><p>Crie seu perfil e seja encontrado por pessoas que precisam do seu serviço.</p></div>
-        <a class="button button-light" href="mailto:contato@trampo.app?subject=Cadastro%20de%20profissional">Quero cadastrar meu serviço</a>
-      </div>
-    </section>
+    <section class="how section" id="como-funciona"><div class="container"><span class="eyebrow">COMO FUNCIONA</span><h2>Resolver ficou mais simples.</h2><div class="steps"><div><strong>01</strong><h3>Busque</h3><p>Digite o serviço que você precisa e sua cidade.</p></div><div><strong>02</strong><h3>Encontre</h3><p>Veja profissionais e escolha o serviço que combina com você.</p></div><div><strong>03</strong><h3>Combine</h3><p>Entre em contato e combine diretamente os detalhes.</p></div></div></div></section>
+    <section class="cta" id="cadastro"><div class="container cta-inner"><div><span class="eyebrow">VOCÊ PRESTA SERVIÇOS?</span><h2>Coloque seu trabalho no TRAMPO.</h2><p>Crie seu perfil e seja encontrado por pessoas que precisam do seu serviço.</p></div><a class="button button-light" href="mailto:contato@trampo.app?subject=Cadastro%20de%20profissional">Quero cadastrar meu serviço</a></div></section>
   </main>
-
   <footer class="footer"><div class="container"><strong>TRAMPO</strong><span>Encontre quem resolve.</span><span>© 2026 TRAMPO</span></div></footer>
   <script src="script.js"></script>
+  <script src="extra-profissionais.js"></script>
 </body>
 </html>
