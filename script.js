@@ -15,8 +15,9 @@ const cards=document.getElementById('cards');
 const emptyState=document.getElementById('emptyState');
 const resultCount=document.getElementById('resultCount');
 const normalize=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+function whatsappLink(phone,name){const number='55'+phone.replace(/\D/g,'');const text=encodeURIComponent(`Ola ${name}, encontrei seu perfil no TRAMPO e gostaria de saber mais sobre seu servico.`);return `https://wa.me/${number}?text=${text}`;}
 function render(list){
- cards.innerHTML=list.map(p=>`<article class="card"><div class="card-top"><img class="profile-photo" src="${p.image}" alt="${p.imageLabel} de ${p.name}" loading="lazy"><span class="rating">${p.imageLabel}</span></div><h3>${p.name}</h3><p class="type">${p.type}</p><p class="city">${p.city}</p><p class="city">${p.address}</p><p class="city">${p.phone}</p><a class="card-link" href="tel:${p.phone.replace(/\D/g,'')}">Ligar</a></article>`).join('');
+ cards.innerHTML=list.map(p=>`<article class="card"><div class="card-top"><img class="profile-photo" src="${p.image}" alt="${p.imageLabel} de ${p.name}" loading="lazy"><span class="rating">${p.imageLabel}</span></div><h3>${p.name}</h3><p class="type">${p.type}</p><p class="city">${p.city}</p><p class="city">${p.address}</p><p class="city">${p.phone}</p><div class="card-actions"><a class="whatsapp-button" href="${whatsappLink(p.phone,p.name)}" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a><a class="card-link" href="tel:${p.phone.replace(/\D/g,'')}">Ligar</a></div></article>`).join('');
  resultCount.textContent=`${list.length} resultado${list.length===1?'':'s'}`;
  emptyState.hidden=list.length!==0;
 }
